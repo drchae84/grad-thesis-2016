@@ -167,7 +167,34 @@ textarea {
     background: -ms-linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
     background: linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a8a8a8', GradientType=1 );
+    z-index: -10000000;
 }
+
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+a>div {
+    display: none;
+}
+a:hover>div {
+    position: relative;
+    display:inline;
+
+}
+
+
+/*a:hover {
+    position: relative;
+    z-index: -1
+}
+a:hover:after {
+    content: url(../img/Phunsombatlert_HUMCON_Studio1a.jpg);
+    display: block;
+    position: absolute;
+}*/
+
 
 
 /* ==========================================================================
