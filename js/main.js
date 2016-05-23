@@ -85,6 +85,10 @@ $('#list p').hover(function() {
     var idx = $('#list p').index(this);
     $('.thumb').eq(idx).css('display', 'none');
   });
-
     console.log('student list');
+
+$('#clock').click(function(){
+        $('#timelapse').toggleClass('hidden');
+    });
 });
+ 

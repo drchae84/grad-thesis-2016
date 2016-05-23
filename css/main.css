@@ -170,6 +170,13 @@ textarea {
     z-index: 1;
 }
 
+#clock {
+	position: fixed;
+	bottom: 25px;
+	right: 65px;
+	z-index: 40000;
+	}
+
 #main-page {
     position: relative;;
     top: 4000px;
@@ -248,6 +255,15 @@ img.thumb {
     margin-left: 1em;
     margin-top: -1em;
     display: none;
+}
+
+#timelapse {
+    position: fixed;
+    width: 800px;
+    height: 800px;
+    z-index: 3  0000;
+    top: 0;
+    left: 0;
 }
 
 
