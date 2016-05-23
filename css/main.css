@@ -163,7 +163,6 @@ textarea {
       #ffffff 40%,
       #58595b 80%
     );
-    z-index: -10000000;
 }
 
 .row {
@@ -171,12 +170,15 @@ textarea {
     z-index: 1;
 }
 
+#main-page {
+    position: relative;;
+    top: 4000px;
+}
+
 #intro {
     position: absolute;
-    border: 1px blue solid;
     z-index: 20000;
     width: 100vw;
-    height: 100vh;
     background: rgba(0, 0, 0, 1);
     background-image:
     linear-gradient(
