@@ -12,30 +12,36 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
 /*@import url("//hello.myfonts.net/count/31025a");*/
 
-@font-face {font-family: 'TradeGothicLT-BoldTwo';src: url('webfonts/31025A_0_0.eot');src: url('webfonts/31025A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31025A_0_0.woff2') format('woff2'),url('webfonts/31025A_0_0.woff') format('woff'),url('webfonts/31025A_0_0.ttf') format('truetype');}
-
-@font-face {font-family: 'TradeGothicLTPro';src: url('webfonts/31025A_1_0.eot');src: url('webfonts/31025A_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/31025A_1_0.woff2') format('woff2'),url('webfonts/31025A_1_0.woff') format('woff'),url('webfonts/31025A_1_0.ttf') format('truetype');}
-
 @font-face {
-  font-family: 'Publico Banner Web';
-  src: url('webfonts/PublicoBanner-Bold-Web.eot');
-  src: url('webfonts/PublicoBanner-Bold-Web.eot?#iefix') format('embedded-opentype'),
-       url('webfonts/PublicoBanner-Bold-Web.woff2') format('woff2'),
-       url('webfonts/PublicoBanner-Bold-Web.woff') format('woff');
-  font-weight:  600;
-  font-style:   normal;
-  font-stretch: normal;
+    font-family: 'TradeGothicLT-BoldTwo';
+    src: url('webfonts/31025A_0_0.eot');
+    src: url('webfonts/31025A_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/31025A_0_0.woff2') format('woff2'), url('webfonts/31025A_0_0.woff') format('woff'), url('webfonts/31025A_0_0.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'TradeGothicLTPro';
+    src: url('webfonts/31025A_1_0.eot');
+    src: url('webfonts/31025A_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/31025A_1_0.woff2') format('woff2'), url('webfonts/31025A_1_0.woff') format('woff'), url('webfonts/31025A_1_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Publico Banner Web';
+    src: url('webfonts/PublicoBanner-Bold-Web.eot');
+    src: url('webfonts/PublicoBanner-Bold-Web.eot?#iefix') format('embedded-opentype'), url('webfonts/PublicoBanner-Bold-Web.woff2') format('woff2'), url('webfonts/PublicoBanner-Bold-Web.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+}
 
 html {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'TradeGothicLTPro', sans-serif;
-    	font-weight: normal;
-    	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.0em;
     letter-spacing: 1px;
@@ -49,23 +55,12 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
 
-}
-
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
 
 @media only screen and (max-width: 767px) {
-  body {
-
-  }
+    body {}
 }
 
 
@@ -159,15 +154,59 @@ textarea {
 }
 
 .container-fluid {
-    background: rgba(0,0,0,1);
-    background: -moz-linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(40%, rgba(0,0,0,1)), color-stop(43%, rgba(230,230,230,1)), color-stop(75%, rgba(168,168,168,1)), color-stop(100%, rgba(168,168,168,1)));
-    background: -webkit-linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
-    background: -o-linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
-    background: -ms-linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
-    background: linear-gradient(91deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(230,230,230,1) 43%, rgba(168,168,168,1) 75%, rgba(168,168,168,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a8a8a8', GradientType=1 );
+    background: rgba(0, 0, 0, 1);
+    background-image:
+    linear-gradient(
+      97deg,
+      #000000,
+      rgba(20, 20, 20, 1) 38%,
+      #ffffff 40%,
+      #58595b 80%
+    );
     z-index: -10000000;
+}
+
+.row {
+    position: relative;
+    z-index: 1;
+}
+
+#intro {
+    position: absolute;
+    border: 1px blue solid;
+    z-index: 20000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 1);
+    background-image:
+    linear-gradient(
+      97deg,
+      #000000,
+      rgba(20, 20, 20, 1) 38%,
+      #ffffff 40%,
+      #58595b 80%
+    );
+}
+
+#line {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 50%;
+    height: 80%;
+    padding: 0 0 0 13%;
+}
+
+#line2 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 50%;
+    height: 80%;
+}
+
+#click {
+    cursor: pointer;
 }
 
 #sticky.stick {
@@ -175,32 +214,48 @@ textarea {
     top: 0;
     z-index: 10000;
 }
-a>div {
+
+#list p {
+    position: relative;
+    z-index: 1000;
+}
+
+#list a {
+    position: relative;
+    z-index: 500;
+}
+
+a > p {
     display: none;
 }
-a:hover>div {
-    position: relative;
-    display:inline;
 
+a:hover > p {
+    position: relative;
+    display: inline;
+    z-index: 50;
 }
 
-
-/*a:hover {
+.work {
     position: relative;
-    z-index: -1
+    z-index: 100;
 }
-a:hover:after {
-    content: url(../img/Phunsombatlert_HUMCON_Studio1a.jpg);
-    display: block;
+
+img.thumb {
     position: absolute;
-}*/
-
+    z-index: 50;
+    margin-left: 1em;
+    margin-top: -1em;
+    display: none;
+}
 
 
 /* ==========================================================================
    Typography
    ========================================================================== */
-a, a:visited, a:active {
+
+a,
+a:visited,
+a:active {
     text-decoration: none;
     color: #fff;
 }
@@ -211,14 +266,14 @@ a:hover {
 
 h1 {
     font-family: 'Publico Banner Web';
-    font-style:   normal;
+    font-style: normal;
     font-stretch: normal;
     font-size: 2.5em;
     line-height: 1.0em;
 }
 
 h3 {
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: normal;
     padding-left: 30px;
@@ -226,36 +281,26 @@ h3 {
 
 .medium {
     font-family: 'TradeGothicLTPro', sans-serif;
-	font-weight: normal;
-	font-style: normal;
+    font-weight: normal;
+    font-style: normal;
     font-size: 1.8em;
     line-height: 1.2em;
 }
 
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-
     html {
         font-size: 11px;
         line-height: 0.8em;
     }
-
     h1 {
         font-size: 1.8em;
         line-height: 1.0em;
     }
-
     h3 {
         padding-left: 15px;
     }
-
     img {
         width: 150px;
     }
