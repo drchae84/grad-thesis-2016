@@ -327,13 +327,13 @@ a:hover > p {
     padding: 0;
 }
 
-    .line {
+    img.line {
         width:130px;
        margin-top: 2em;
        margin-left: 2.5em;
     }
 
-    .line2 {
+    img.line2 {
         width: 120px;
         margin-left: -10px;
         margin-top: 1em;
