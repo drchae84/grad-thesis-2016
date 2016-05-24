@@ -70,20 +70,6 @@ $(function() {
     });
     console.log('hello student list');
 
-// disable sticky on mobile
-    $(function() {
-        var $window = $(window),
-            $html = $('html');
-
-        $window.resize(function resize() {
-            if ($window.width() < 514) {
-                return $("div#sticky").removeID('#sticky');
-            }
-
-            $html.removeClass('mobile');
-        }).trigger('resize');
-    });
-
 
 // THUMBNAIL DISPLAY
 $('#list p').hover(function() {
