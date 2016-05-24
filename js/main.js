@@ -31,25 +31,20 @@ console.log('intro is loaded');
 
 // ANCHOR LINK SMOOTH SCROLLING //
 
-    $("a").on('click', function(event) {
-
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
         $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function() {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-        });
-    });
-
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
     function sticky_relocate() {
         var window_top = $(window).scrollTop();
@@ -75,7 +70,7 @@ console.log('intro is loaded');
     });
     console.log('hello student list');
 
-// disable sticky on mobile 
+// disable sticky on mobile
     $(function() {
         var $window = $(window),
             $html = $('html');

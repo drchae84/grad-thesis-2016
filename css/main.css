@@ -158,10 +158,11 @@ textarea {
     linear-gradient(
       97deg,
       #000000,
-      rgba(20, 20, 20, 1) 28%,
-      rgba(230, 230, 230, 1)30%,
+      rgba(20, 20, 20, 1) 24%,
+      rgba(210, 210, 210, 1)25%,
       #58595b 80%
     );
+    height: 1700vh;
 }
 
 .row {
@@ -173,7 +174,7 @@ textarea {
 	position: fixed;
 	bottom: 25px;
 	right: 65px;
-	z-index: 40000;
+	z-index: 4;
 	}
 
 #main-page {
@@ -183,8 +184,17 @@ textarea {
 
 #intro {
     position: absolute;
-    z-index: 20000;
+    z-index: 1;
     width: 100vw;
+    background: rgba(0, 0, 0, 1);
+    background-image:
+    linear-gradient(
+      97deg,
+      #000000,
+      rgba(20, 20, 20, 1) 38%,
+      #ffffff 40%,
+      #58595b 80%
+    );
 }
 
 #line {
@@ -199,10 +209,33 @@ textarea {
 img.line {
    margin-top: 5em;
    margin-left: 9em;
+   width: 348px;
+   -webkit-transition: width 0.5s, -webkit-transform 0.5s;
+    transition: width 0.5s, transform 0.5s;
 }
+
+img.line:hover {
+   width:358px;
+   -webkit-transform: width(105%);
+   transform: width(105%);
+}
+
 
 h3.line2 {
     margin-top: 8em;
+}
+
+
+img.line2 {
+    width:290px;
+    -webkit-transition: width 0.5s, -webkit-transform 0.5s;
+     transition: width 0.5s, transform 2s;
+}
+
+img.line2:hover {
+    width: 300px;
+    -webkit-transform: width(105%);
+    transform: width(105%);
 }
 
 #line2 {
@@ -220,7 +253,7 @@ h3.line2 {
 #sticky.stick {
     position: fixed;
     top: 0;
-    z-index: 10000;
+    z-index: 5;
 }
 
 #list p {
@@ -249,11 +282,9 @@ a:hover > p {
     z-index: 100;
 }
 
-img.thumb {
+.thumb {
     position: absolute;
     z-index: 50;
-    margin-left: 1em;
-    margin-top: -1em;
     display: none;
 }
 
@@ -261,9 +292,10 @@ img.thumb {
     position: fixed;
     width: 800px;
     height: 800px;
-    z-index: 3  0000;
-    top: 0;
-    left: 0;
+    z-index: 3;
+    top: 0%;
+    left: 0%;
+    margin: 0 auto;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
@@ -286,7 +318,7 @@ img.thumb {
               97deg,
               #000000,
               rgba(20, 20, 20, 1) 20%,
-              rgba(230, 230, 230, 1)22%,
+              rgba(210, 210, 210, 1)22%,
               #58595b 80%
             );
         }
@@ -295,13 +327,13 @@ img.thumb {
     padding: 0;
 }
 
-    img.line {
+    .line {
         width:130px;
        margin-top: 2em;
        margin-left: 2.5em;
     }
 
-    img.line2 {
+    .line2 {
         width: 120px;
         margin-left: -10px;
         margin-top: 1em;
@@ -344,6 +376,10 @@ h1 {
     line-height: 1.0em;
 }
 
+h2 {
+    line-height: 1.4em;
+}
+
 h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -368,8 +404,11 @@ h3 {
         line-height: 0.8em;
     }
     h1 {
-        font-size: 1.8em;
+        font-size: 3.0em;
         line-height: 1.0em;
+    }
+    h2 {
+        line-height: 1.4em;
     }
     h3 {
         padding-left: 15px;
