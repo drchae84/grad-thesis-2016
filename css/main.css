@@ -170,13 +170,6 @@ textarea {
     z-index: 1;
 }
 
-#clock {
-	position: fixed;
-	bottom: 25px;
-	right: 65px;
-	z-index: 40000;
-	}
-
 #main-page {
     position: relative;;
     top: 4000px;
@@ -218,10 +211,10 @@ textarea {
     cursor: pointer;
 }
 
-#sticky.stick {
-    position: fixed;
-    top: 0;
-    z-index: 10000;
+#wrapper.stick {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
 }
 
 #list p {
@@ -257,15 +250,17 @@ img.thumb {
     display: none;
 }
 
+<<<<<<< HEAD
 #timelapse {
     position: fixed;
     width: 800px;
     height: 800px;
-    z-index: 3  0000;
-    top: 0;
-    left: 0;
+    z-index: 30000;
+    margin: 0 auto;
 }
 
+=======
+>>>>>>> parent of 2a551bf... changes
 
 /* ==========================================================================
    Typography
