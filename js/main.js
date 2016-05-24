@@ -21,12 +21,8 @@ $('#intro').one('click', function () {
         });
     });
 
-    $('#main-page').animate({top:0},2000, function(){
-        $('#main-page').css({
-            top: 0,
-        });
-    });
-console.log('intro is loaded');
+    $( "#info" ).fadeIn(1200);
+    $( "#dept" ).fadeIn(1200);
 });
 
 // ANCHOR LINK SMOOTH SCROLLING //
@@ -46,23 +42,8 @@ $(function() {
   });
 });
 
-    function sticky_relocate() {
-        var window_top = $(window).scrollTop();
-        var div_top = $('#sticky-anchor').offset().top;
-        if (window_top > div_top) {
-            $('#sticky').addClass('stick');
-        } else {
-            $('#sticky').removeClass('stick');
-        }
-    }
-    console.log('hello sticky');
 
-    $(function() {
-        $(window).scroll(sticky_relocate);
-        sticky_relocate();
-    });
-
-    $ ("#sticky a").on('click', function(event) {
+    $ ("#dept a").on('click', function(event) {
       // event.preventDefault();
 
 /*makes list visible*/

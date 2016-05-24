@@ -13,7 +13,6 @@
    ========================================================================== */
 
 
-/*@import url("//hello.myfonts.net/count/31025a");*/
 
 @font-face {
     font-family: 'TradeGothicLT-BoldTwo';
@@ -38,14 +37,16 @@
 
 html {
     font-family: 'TradeGothicLTPro', sans-serif;
-    font-weight: normal;
     font-style: normal;
     font-size: 16px;
-    line-height: 1.4em;
+    line-height: 1.2em;
     letter-spacing: 1px;
     color: #fff;
-    background-color: #000;
-    margin: 0 auto;
+    background: url('../img/2016-BG.png') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
 }
 
 body {
@@ -147,27 +148,72 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*  SECTIONS  */
+   .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+   }
 
-.space {
-    height: 50vh;
+   /*  COLUMN SETUP  */
+   .col {
+    display: block;
+    float:left;
+    margin: 0% 0 2% -2%;
+   }
+   .col:first-child { margin-left: 2%; }
+
+   /*  GROUPING  */
+   .group:before,
+   .group:after { content:""; display:table; }
+   .group:after { clear:both;}
+   .group { zoom:1; /* For IE 6/7 */ }
+
+   /*  GRID OF FOUR  */
+  .span_4_of_4 {
+    width: 100%;
+  }
+  .span_3_of_4 {
+    width: 74.6%;
+  }
+  .span_2_of_4 {
+    width: 49.2%;
+  }
+  .span_1_of_4 {
+    width: 23.8%;
+  }
+
+
+  #clock {
+    position: fixed;
+    bottom: 25px;
+    right: 65px;
+    z-index: 4;
+    }
+
+  .main-page {
+    opacity: 0;
+  }
+
+  #intro {
+    position: absolute;
+    width: 100vw;
+  }
+
+  #intro {
+      position: absolute;
+      width: 100vw;
+  }
+
+#info {
+    display: none;
+    position: fixed;
+    width: 35%;
+    height: 80%
 }
 
-.container-fluid {
-    background: rgba(0, 0, 0, 1);
-    background-image:
-    linear-gradient(
-      97deg,
-      #000000,
-      rgba(20, 20, 20, 1) 24%,
-      rgba(210, 210, 210, 1)25%,
-      #58595b 80%
-    );
-    height: 1700vh;
-}
-
-.row {
-    position: relative;
-    z-index: 1;
+#info p {
+    line-height: 1.3em;
 }
 
 #clock {
@@ -177,25 +223,6 @@ textarea {
 	z-index: 4;
 	}
 
-#main-page {
-    position: relative;;
-    top: 4000px;
-}
-
-#intro {
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    background: rgba(0, 0, 0, 1);
-    background-image:
-    linear-gradient(
-      97deg,
-      #000000,
-      rgba(20, 20, 20, 1) 38%,
-      #ffffff 40%,
-      #58595b 80%
-    );
-}
 
 #line {
     position: absolute;
@@ -245,19 +272,21 @@ img.line2:hover {
     width: 50%;
     height: 110%;
 }
-
-#click {
-    cursor: pointer;
+#dept {
+    position: fixed;
+    top:10%;
+    left:55%;
+    display: none;
 }
 
-#sticky.stick {
-    position: fixed;
-    top: 0;
-    z-index: 5;
+#list {
+    position: absolute;
+    margin-left: 70%;
+    margin-top:30%;
+    width: 100%;
 }
 
 #list p {
-    position: relative;
     z-index: 1000;
     font-family: 'Publico'
 }
@@ -265,6 +294,11 @@ img.line2:hover {
 #list a {
     position: relative;
     z-index: 500;
+}
+
+#list a:hover {
+    color: #333;
+    text-decoration: none;
 }
 
 a > p {
@@ -284,7 +318,7 @@ a:hover > p {
 
 .thumb {
     position: absolute;
-    z-index: 50;
+    z-index: -50;
     display: none;
 }
 
@@ -297,31 +331,6 @@ a:hover > p {
     left: 0%;
     margin: 0 auto;
 }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-    #sticky {
-        position: relative;
-    }
-    .row {
-        position: relative;
-        z-index: 1;
-    }
-
-    #clock {
-    	display: none;
-    	}
-
-        .container-fluid {
-            background: rgba(0, 0, 0, 1);
-            background-image:
-            linear-gradient(
-              97deg,
-              #000000,
-              rgba(20, 20, 20, 1) 20%,
-              rgba(210, 210, 210, 1)22%,
-              #58595b 80%
-            );
-        }
 
 #line {
     padding: 0;
@@ -348,6 +357,31 @@ a:hover > p {
     }
 }
 
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  .col {  margin: 1% 0 1% 0%;
+    }
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%;
+  }
+
+  #info {
+      position: absolute !important;
+      left: 0;
+      clear: both;
+  }
+
+  #dept {
+      position: absolute !important;
+      left: 0;
+  }
+
+  #list {
+      width: 100%;
+      left: 0;
+      position: relative;
+  }
+}
+
 /* ==========================================================================
    Typography
    ========================================================================== */
@@ -360,49 +394,41 @@ a:active {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
 }
 
 p {
-    line-height: 1.5em;
-    font-size: 1.2em;
+    line-height: 0.9em;
+    font-size: 0.8em;
+    letter-spacing: 0px;
 }
 
 h1 {
     font-family: 'Publico Banner Web';
     font-style: normal;
     font-stretch: normal;
-    font-size: 2.5em;
+    font-size: 4.5em;
     line-height: 1.0em;
+    margin: 5% auto;
 }
 
 h2 {
-    line-height: 1.4em;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 h3 {
     text-transform: uppercase;
-    letter-spacing: 2px;
     font-weight: normal;
     padding-left: 30px;
     line-height: 1.4em;
 }
 
-.medium {
-    font-family: 'TradeGothicLTPro', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.8em;
-    line-height: 1.2em;
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-    html {
-        font-size: 11px;
-        line-height: 0.8em;
-    }
     h1 {
         font-size: 3.0em;
         line-height: 1.0em;
