@@ -37,13 +37,11 @@
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.4;
     font-family: 'TradeGothicLTPro', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 16px;
-    line-height: 1.0em;
+    line-height: 1.4em;
     letter-spacing: 1px;
     color: #fff;
     background-color: #000;
@@ -53,6 +51,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
@@ -159,8 +158,8 @@ textarea {
     linear-gradient(
       97deg,
       #000000,
-      rgba(20, 20, 20, 1) 38%,
-      #ffffff 40%,
+      rgba(20, 20, 20, 1) 28%,
+      rgba(230, 230, 230, 1)30%,
       #58595b 80%
     );
 }
@@ -186,15 +185,6 @@ textarea {
     position: absolute;
     z-index: 20000;
     width: 100vw;
-    background: rgba(0, 0, 0, 1);
-    background-image:
-    linear-gradient(
-      97deg,
-      #000000,
-      rgba(20, 20, 20, 1) 38%,
-      #ffffff 40%,
-      #58595b 80%
-    );
 }
 
 #line {
@@ -202,8 +192,17 @@ textarea {
     top: 40px;
     left: 0;
     width: 50%;
-    height: 80%;
+    height: 110%;
     padding: 0 0 0 13%;
+}
+
+img.line {
+   margin-top: 5em;
+   margin-left: 9em;
+}
+
+h3.line2 {
+    margin-top: 8em;
 }
 
 #line2 {
@@ -211,7 +210,7 @@ textarea {
     top: 40px;
     left: 50%;
     width: 50%;
-    height: 80%;
+    height: 110%;
 }
 
 #click {
@@ -227,6 +226,7 @@ textarea {
 #list p {
     position: relative;
     z-index: 1000;
+    font-family: 'Publico'
 }
 
 #list a {
@@ -266,6 +266,55 @@ img.thumb {
     left: 0;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+    #sticky {
+        position: relative;
+    }
+    .row {
+        position: relative;
+        z-index: 1;
+    }
+
+    #clock {
+    	display: none;
+    	}
+
+        .container-fluid {
+            background: rgba(0, 0, 0, 1);
+            background-image:
+            linear-gradient(
+              97deg,
+              #000000,
+              rgba(20, 20, 20, 1) 20%,
+              rgba(230, 230, 230, 1)22%,
+              #58595b 80%
+            );
+        }
+
+#line {
+    padding: 0;
+}
+
+    img.line {
+        width:130px;
+       margin-top: 2em;
+       margin-left: 2.5em;
+    }
+
+    img.line2 {
+        width: 120px;
+        margin-left: -10px;
+        margin-top: 1em;
+    }
+
+    h3.line {
+        line-height: 1.4em;
+    }
+
+    h3.line2 {
+        line-height: 1.4em;
+    }
+}
 
 /* ==========================================================================
    Typography
@@ -282,6 +331,11 @@ a:hover {
     text-decoration: underline;
 }
 
+p {
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
 h1 {
     font-family: 'Publico Banner Web';
     font-style: normal;
@@ -295,6 +349,7 @@ h3 {
     letter-spacing: 2px;
     font-weight: normal;
     padding-left: 30px;
+    line-height: 1.4em;
 }
 
 .medium {
