@@ -1,6 +1,6 @@
 $(document).ready(function() {
 // INTRO ANIMATION
-$('#intro').one('click', function () {
+$('#intro').click(function () {
 
     var windowHeight = $(window).height();
     var lineHeight = $('#line').height();
@@ -21,9 +21,9 @@ $('#intro').one('click', function () {
         });
     });
 
-    $('#main-page').animate({top:0},2000, function(){
-        $('#main-page').css({
-            top: 0,
+    $('#intro').animate({opacity:0},4000, function(){
+        $('#intro').css({
+            opacity: 0,
         });
     });
 console.log('intro is loaded');
