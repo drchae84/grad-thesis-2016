@@ -163,7 +163,6 @@ textarea {
       #ffffff 40%,
       #58595b 80%
     );
-    z-index: -10000000;
 }
 
 .row {
@@ -171,12 +170,22 @@ textarea {
     z-index: 1;
 }
 
+#clock {
+	position: fixed;
+	bottom: 25px;
+	right: 65px;
+	z-index: 40000;
+	}
+
+#main-page {
+    position: relative;;
+    top: 4000px;
+}
+
 #intro {
     position: absolute;
-    border: 1px blue solid;
     z-index: 20000;
     width: 100vw;
-    height: 100vh;
     background: rgba(0, 0, 0, 1);
     background-image:
     linear-gradient(
@@ -209,10 +218,10 @@ textarea {
     cursor: pointer;
 }
 
-#wrapper.stick {
-  position: fixed;
-  top: 0;
-  z-index: 10000;
+#sticky.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
 }
 
 #list p {
@@ -248,17 +257,15 @@ img.thumb {
     display: none;
 }
 
-<<<<<<< HEAD
 #timelapse {
     position: fixed;
     width: 800px;
     height: 800px;
-    z-index: 30000;
-    margin: 0 auto;
+    z-index: 3  0000;
+    top: 0;
+    left: 0;
 }
 
-=======
->>>>>>> parent of 2a551bf... changes
 
 /* ==========================================================================
    Typography
