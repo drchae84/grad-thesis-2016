@@ -226,15 +226,15 @@ textarea {
 
 #line {
     position: absolute;
-    top: 40px;
+    top: 0;
     left: 0;
     width: 50%;
-    height: 110%;
+    height: 90%;
     padding: 0 0 0 13%;
 }
 
 img.line {
-   margin-top: 5em;
+   margin-top: 3em;
    margin-left: 9em;
    width: 348px;
    -webkit-transition: width 0.5s, -webkit-transform 0.5s;
@@ -247,9 +247,17 @@ img.line:hover {
    transform: width(105%);
 }
 
+#line2 {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 90%;
+    padding: 3%;
+}
+
 
 h3.line2 {
-    margin-top: 8em;
+    margin-top: 4.0em;
 }
 
 
@@ -265,13 +273,6 @@ img.line2:hover {
     transform: width(105%);
 }
 
-#line2 {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    width: 50%;
-    height: 110%;
-}
 #dept {
     position: fixed;
     top:10%;
@@ -281,9 +282,8 @@ img.line2:hover {
 
 #list {
     position: absolute;
-    margin-left: 70%;
+    margin-left: 20%;
     margin-top:30%;
-    width: 100%;
 }
 
 #list p {
@@ -332,31 +332,6 @@ a:hover > p {
     margin: 0 auto;
 }
 
-#line {
-    padding: 0;
-}
-
-    img.line {
-        width:130px;
-       margin-top: 2em;
-       margin-left: 2.5em;
-    }
-
-    img.line2 {
-        width: 120px;
-        margin-left: -10px;
-        margin-top: 1em;
-    }
-
-    h3.line {
-        line-height: 1.4em;
-    }
-
-    h3.line2 {
-        line-height: 1.4em;
-    }
-}
-
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
   .col {  margin: 1% 0 1% 0%;
@@ -379,6 +354,25 @@ a:hover > p {
       width: 100%;
       left: 0;
       position: relative;
+  }
+  img.line {
+      width:130px;
+     margin-top: 2em;
+     margin-left: 2.5em;
+  }
+
+  img.line2 {
+      width: 120px;
+      margin-left: -10px;
+      margin-top: 1em;
+  }
+
+  h3.line {
+      line-height: 1.4em;
+  }
+
+  h3.line2 {
+      line-height: 1.4em;
   }
 }
 
@@ -438,9 +432,6 @@ h3 {
     }
     h3 {
         padding-left: 15px;
-    }
-    img {
-        width: 150px;
     }
 }
 
