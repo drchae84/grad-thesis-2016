@@ -334,10 +334,10 @@ a:hover > p {
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
-  .col {  margin: 1% 0 1% 0%;
+  .col {  margin: 0 auto;
     }
   .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%;
-  }
+  }\
 
   #info {
       position: absolute !important;
@@ -357,22 +357,34 @@ a:hover > p {
   }
   img.line {
       width:130px;
-     margin-top: 2em;
-     margin-left: 2.5em;
+     margin-top: 1.5em;
+     margin-left: 0.0em;
   }
 
   img.line2 {
       width: 120px;
-      margin-left: -10px;
-      margin-top: 1em;
+      margin-left: 0.2em;
+      margin-top: 0.6em;
   }
 
   h3.line {
+      font-size: 0.9em;
       line-height: 1.4em;
+      margin-left: -2em;
+      margin-top: 3em;
   }
 
   h3.line2 {
+      font-size: 0.9em;
       line-height: 1.4em;
+  }
+
+  html {
+      background: url('../img/2016-BG-mobile.png') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
   }
 }
 
@@ -403,7 +415,7 @@ h1 {
     font-family: 'Publico Banner Web';
     font-style: normal;
     font-stretch: normal;
-    font-size: 4.5em;
+    font-size: 2.5em;
     line-height: 1.0em;
     margin: 5% auto;
 }
