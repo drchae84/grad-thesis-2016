@@ -23,6 +23,7 @@ $('#intro').one('click', function () {
 
     $( "#info" ).fadeIn(1200);
     $( "#dept" ).fadeIn(1200);
+    $( 'html' ).css({overflow: 'scroll'});
 });
 
 // ANCHOR LINK SMOOTH SCROLLING //
